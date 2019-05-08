@@ -3,12 +3,12 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
-
+#Dynmapをｽｸﾚｲﾋﾟﾝｸﾞしてｻｰﾊﾞｰの情報をﾘｱﾙﾀｲﾑに取得するﾔﾂ
 options = Options()
 options.add_argument('--headless')
 driver = webdriver.Chrome(executable_path=r"driver_PATH", options=options)
 driver.get("Dynmap_URL")
-sleep(5)#JSの読み込みをとりあえず5秒待ち
+sleep(0.1)
 print("ready")
 n = 1
 while True:
